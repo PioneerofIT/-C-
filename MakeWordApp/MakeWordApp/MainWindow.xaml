@@ -12,10 +12,10 @@
             <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0">
-            <Label Content="틀린횟수 : 0 of 0" FontWeight="Bold" HorizontalAlignment="Center"></Label>
-            <Label Content="한국어" FontSize="30" HorizontalAlignment="Center"/>
-            <Label Content="영어" FontSize="40" HorizontalAlignment="Center"/>
-            <Label Content="메세지" FontWeight="Bold" HorizontalContentAlignment="Center" FontSize="20" Foreground="White"  Background="Red"/>
+            <Label Content="{Binding WrongStatus}" FontWeight="Bold" HorizontalAlignment="Center"></Label>
+            <Label Content="{Binding SelKor}"  FontSize="30" HorizontalAlignment="Center"/>
+            <Label Content="{Binding SelEng}" FontSize="40" HorizontalAlignment="Center"/>
+            <Label Content="{Binding Message}"  FontWeight="Bold" HorizontalContentAlignment="Center" FontSize="20" Foreground="White"  Background="Red"/>
             <Button Content="다시하기" HorizontalAlignment="Center" Width="100" Margin="10" Click="Button_Click_1"/>
         </StackPanel>
         <UniformGrid Grid.Row="1">
